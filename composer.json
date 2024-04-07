@@ -1,17 +1,28 @@
 {
-  "name": "borisvasilevv/csu2024",
+  "name": "vvelless/csu2024",
   "description": "Educational project for ChelSU 2024",
   "type": "project",
   "autoload": {
     "psr-4": {
       "BorisVasilevv\\Csu2024\\": "src/app/",
-      "BorisVasilevv\\router\\": "src/routes/",
-      "BorisVasilevv\\repository\\":"src/repository/"
+      "ersnick\\Router\\": "src/router/",
+      "BorisVasilevv\\Repository\\":"src/repository/",
+      "AlexaLeonid\\Exceptions\\":"src/Exeptions/",
+      "AlexaLeonid\\Handlers\\":"src/Handlers/"
     }
   },
   "authors": [
     {
+      "name": "ersnick"
+    },
+    {
+      "name": "alexaleonid"
+    },
+    {
       "name": "borisvasilevv"
+    },
+    {
+      "name": "vvelless"
     }
   ],
   "minimum-stability": "dev",

@@ -1,9 +1,11 @@
 <?php
 
-use BorisVasilevv\Csu2024\App;
-
+//use BorisVasilevv\Csu2024\App;
+use ersnick\Router\Router;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-$app = new App();
-echo $app->run();
+$router = new Router;
+$router->run();
+//$app = new App();
+//echo $app->run();
