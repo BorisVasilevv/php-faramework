@@ -1,6 +1,6 @@
 <?php
 
-namespace AlexaLeonid\Exceptions;
+namespace AlexaLeonid\Exceptions\Http;
 
 class HttpServiceUnavailableException extends HttpException
 {
@@ -8,5 +8,5 @@ class HttpServiceUnavailableException extends HttpException
 
     protected $message = "503 Service Unavailable:  the server is not ready to handle the request.";
 
-
+    protected string $view = "Exceptions/503ServiceUnavailable.html";
 }

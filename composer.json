@@ -7,7 +7,7 @@
       "BorisVasilevv\\Csu2024\\": "src/app/",
       "ersnick\\Router\\": "src/router/",
       "BorisVasilevv\\Repository\\":"src/repository/",
-      "AlexaLeonid\\Exceptions\\":"src/Exeptions/",
+      "AlexaLeonid\\Exceptions\\Http\\":"src/Exceptions/Http",
       "AlexaLeonid\\Handlers\\":"src/Handlers/"
     }
   },

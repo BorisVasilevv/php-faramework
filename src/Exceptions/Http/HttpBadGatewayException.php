@@ -1,6 +1,7 @@
 <?php
 
-namespace AlexaLeonid\Exceptions;
+namespace AlexaLeonid\Exceptions\Http;
+
 
 class HttpBadGatewayException extends HttpException
 {
@@ -8,4 +9,5 @@ class HttpBadGatewayException extends HttpException
 
     protected $message = "502 Bad Gateway: the server, while acting as a gateway or proxy, received an invalid response from the upstream server.";
 
+    protected string $view = "Exceptions/502BadGateway.html";
 }

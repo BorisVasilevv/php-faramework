@@ -2,6 +2,9 @@
 
 namespace ersnick\Router;
 
+use AlexaLeonid\Exceptions\Http\HttpNotFoundException;
+use AlexaLeonid\Handlers\ErrorHandler;
+
 class Router {
 
     protected $routes = [];
@@ -14,12 +17,14 @@ class Router {
         }
     }
 
-    public function add($route, $params) {
+    public function add($route, $params): void
+    {
         $route = '#^'.$route.'$#';
         $this->routes[$route] = $params;
     }
 
-    public function match() {
+    public function match(): bool
+    {
         $url = trim($_SERVER['REQUEST_URI'], '/');
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {
@@ -30,7 +35,9 @@ class Router {
         return false;
     }
 
-    public function run() {
+    public function run(): void
+    {
+        set_error_handler([new ErrorHandler(), "HttpErrorHandler"]);
         if ($this->match()) {
             $controllerPath = 'src\controllers\\'.ucfirst($this->params['controller']).'Controller';
             if (class_exists($controllerPath)) {
@@ -45,8 +52,16 @@ class Router {
                 echo 'Сука где '.$controllerPath;
             }
         } else {
-            header("HTTP/1.0 404 Not Found");
-            include('404NotFound.html');
+//            header("HTTP/1.0 404 Not Found");
+ //           include('Exceptions/400BadRequest.html');
+
+
+            try{
+                throw new HttpNotFoundException();
+            }catch (HttpNotFoundException $e){
+                include($e->getView());
+            }
+
         }
     }
 }
