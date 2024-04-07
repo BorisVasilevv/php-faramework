@@ -6,12 +6,15 @@
     "psr-4": {
       "BorisVasilevv\\Csu2024\\": "src/app/",
       "BorisVasilevv\\router\\": "src/routes/",
-      "BorisVasilevv\\repository\\":"src/repository/"
+      "BorisVasilevv\\repository\\":"src/repository/",
+      "AlexaLeonid\\Exceptions\\":"src/Exeptions/",
+      "AlexaLeonid\\Handlers\\":"src/Handlers/"
     }
   },
   "authors": [
     {
-      "name": "borisvasilevv"
+      "name": "borisvasilevv",
+      "name": "alexaleonid"
     }
   ],
   "minimum-stability": "dev",
