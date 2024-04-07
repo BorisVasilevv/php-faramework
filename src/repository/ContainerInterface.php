@@ -2,8 +2,8 @@
 
 namespace BorisVasilevv\repository;
 
-interface Container{
+interface ContainerInterface{
     public function has(string $key): bool;
-    public function get(string $key): mixed;
+    public function get(string $key);
 
    }

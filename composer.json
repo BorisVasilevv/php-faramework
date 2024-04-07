@@ -6,7 +6,8 @@
     "psr-4": {
       "BorisVasilevv\\Csu2024\\": "src/app/",
       "BorisVasilevv\\router\\": "src/routes/",
-      "BorisVasilevv\\repository\\":"src/repository/"
+      "BorisVasilevv\\repository\\":"src/repository/",
+      "BorisVasilevv\\Exception\\": "src/exception/"
     }
   },
   "authors": [

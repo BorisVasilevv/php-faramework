@@ -1,7 +1,7 @@
 <?php
 
 namespace BorisVasilevv\repository;
-interface Component{
+interface ComponentInterface{
     public function __construct(array $params);
     public function init():void;
 }
