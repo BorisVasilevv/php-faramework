@@ -1,9 +1,9 @@
 <?php
 
 
-namespace BorisVasilevv\router;
-use BorisVasilevv\repository\BaseComponent;
-use BorisVasilevv\router\router\RequestFactory;
+namespace vvelless\router;
+use vvelless\repository\BaseComponent;
+use vvelless\router\router\RequestFactory;
 
 class Router extends BaseComponent
 {

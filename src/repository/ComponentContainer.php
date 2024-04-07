@@ -1,6 +1,6 @@
 <?php
 
-namespace BorisVasilevv\repository;
+namespace vvelless\repository;
 
 
 

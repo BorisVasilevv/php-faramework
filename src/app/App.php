@@ -1,11 +1,11 @@
 <?php
 
-namespace BorisVasilevv\Csu2024;
+namespace vvelless\Csu2024;
 
 
 
-use BorisVasilevv\router\Router;
-use BorisVasilevv\repository\ComponentContainer;
+use vvelless\router\Router;
+use vvelless\repository\ComponentContainer;
 
 class App
 {

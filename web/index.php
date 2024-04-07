@@ -1,6 +1,6 @@
 <?php
 
-use BorisVasilevv\Csu2024\App;
+use vvelless\Csu2024\App;
 
 
 require dirname(__DIR__) . '/vendor/autoload.php';
