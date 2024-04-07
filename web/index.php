@@ -1,7 +1,7 @@
 <?php
 
-use ersnick\Csu2024\App;
-use ersnick\Csu2024\Router;
+use BorisVasilevv\Csu2024\App;
+use ersnick\Router\Router;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 

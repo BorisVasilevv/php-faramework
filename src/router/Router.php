@@ -1,6 +1,6 @@
 <?php
 
-namespace ersnick\Csu2024;
+namespace ersnick\Router;
 
 class Router {
 
