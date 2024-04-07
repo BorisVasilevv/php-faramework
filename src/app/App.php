@@ -3,7 +3,7 @@
 namespace BorisVasilevv\Csu2024;
 
 
-
+use AlexaLeonid\Handlers\ErrorHandler;
 use BorisVasilevv\router\Router;
 use BorisVasilevv\repository\ComponentContainer;
 
@@ -24,9 +24,12 @@ class App
         );
     }
 
+
     public function run(): string
     {
-//        return 'It`s a life!';
+        set_error_handler([new ErrorHandler(), "HttpErrorHandler"]);
+
+        return 'It`s a life!';
         $router = new Router((array)0);
         $router->run();
         return "";
