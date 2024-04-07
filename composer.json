@@ -5,13 +5,14 @@
   "autoload": {
     "psr-4": {
       "BorisVasilevv\\Csu2024\\": "src/app/",
-      "BorisVasilevv\\router\\": "src/routes/",
+      "ersnick\\Csu2024\\": "src/router/",
       "BorisVasilevv\\repository\\":"src/repository/"
     }
   },
   "authors": [
     {
-      "name": "borisvasilevv"
+      "name": "borisvasilevv",
+      "name": "ersnick"
     }
   ],
   "minimum-stability": "dev",
