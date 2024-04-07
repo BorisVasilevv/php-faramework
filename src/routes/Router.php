@@ -2,10 +2,10 @@
 
 
 namespace BorisVasilevv\router;
-use BorisVasilevv\repository\BaseComponentInterface;
+use BorisVasilevv\repository\BaseComponent;
 use BorisVasilevv\router\router\RequestFactory;
 
-class Router extends BaseComponentInterface
+class Router extends BaseComponent
 {
     public array $rules=["index"=>"hello"];
     //кеу path value code ["index" => ["DefaultAction", "handler"], ]; handler это метод DefaultAction
