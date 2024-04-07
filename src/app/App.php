@@ -1,6 +1,6 @@
 <?php
 
-namespace BorisVasilevv\Csu2024;
+namespace vvelless\Csu2024;
 
 
 use AlexaLeonid\Handlers\ErrorHandler;

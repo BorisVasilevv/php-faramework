@@ -1,5 +1,5 @@
 {
-  "name": "borisvasilevv/csu2024",
+  "name": "vvelless/csu2024",
   "description": "Educational project for ChelSU 2024",
   "type": "project",
   "autoload": {
@@ -16,6 +16,7 @@
       "name": "ersnick",
       "name": "alexaleonid",
       "name": "borisvasilevv"
+      "name": "vvelless"
     }
   ],
   "minimum-stability": "dev",
