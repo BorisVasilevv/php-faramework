@@ -1,10 +1,11 @@
 <?php
 
-namespace BorisVasilevv\Csu2024;
+namespace vvelless\Csu2024;
 
 
-
-use BorisVasilevv\router\Router;
+use AlexaLeonid\Handlers\ErrorHandler;
+use BorisVasilevv\repository\Container;
+use ersnick\Router\Router;
 use BorisVasilevv\repository\ComponentContainer;
 
 class App
@@ -24,18 +25,14 @@ class App
         );
     }
 
-    public function run(): string
-    {
+
+//    public function run(): string
+//    {
+//        set_error_handler([new ErrorHandler(), "HttpErrorHandler"]);
+//
 //        return 'It`s a life!';
-<<<<<<< Updated upstream
-        $router = new Router((array)0);
-        $router->run();
-        return "";
-    }
-=======
-//        $Router = new Router((array)0);
-//        $Router->run();
+//        $router = new Router((array)0);
+//        $router->run();
 //        return "";
 //    }
->>>>>>> Stashed changes
 }
