@@ -1,6 +1,6 @@
 <?php
 
-namespace AlexaLeonid\Exceptions;
+namespace AlexaLeonid\Exceptions\Http;
 
 
 
@@ -8,6 +8,8 @@ use Exception;
 
 class HttpException extends Exception
 {
+
+    protected string $view = "";
 
     public function getCod()
     {
@@ -18,6 +20,12 @@ class HttpException extends Exception
         return $this->message;
 
     }
+
+    public function getView(): string
+    {
+        return $this->view;
+    }
+
 
 
 

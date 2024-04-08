@@ -2,8 +2,6 @@
 
 namespace vvelless\Csu2024;
 
-
-use AlexaLeonid\Handlers\ErrorHandler;
 use BorisVasilevv\repository\Container;
 use ersnick\Router\Router;
 use BorisVasilevv\repository\ComponentContainer;

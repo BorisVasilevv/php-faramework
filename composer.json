@@ -9,7 +9,7 @@
       "BorisVasilevv\\repository\\":"src/repository/",
       "BorisVasilevv\\Exception\\": "src/exception/",
       "BorisVasilevv\\Repository\\":"src/repository/",
-      "AlexaLeonid\\Exceptions\\Http\\": "src/exception/http/",
+      "AlexaLeonid\\Exceptions\\Http\\":"src/Exceptions/Http",
       "AlexaLeonid\\Handlers\\":"src/Handlers/"
     }
   },

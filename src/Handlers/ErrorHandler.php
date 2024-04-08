@@ -2,15 +2,15 @@
 
 namespace AlexaLeonid\Handlers;
 
-use AlexaLeonid\Exceptions\HttpBadGatewayException;
-use AlexaLeonid\Exceptions\HttpBadRequestException;
-use AlexaLeonid\Exceptions\HttpException;
-use AlexaLeonid\Exceptions\HttpForbiddenException;
-use AlexaLeonid\Exceptions\HttpInternalServerErrorException;
-use AlexaLeonid\Exceptions\HttpNotFoundException;
-use AlexaLeonid\Exceptions\HttpServiceUnavailableException;
-use AlexaLeonid\Exceptions\HttpUnauthorizedException;
+use AlexaLeonid\Exceptions\Http\HttpBadGatewayException;
+use AlexaLeonid\Exceptions\Http\HttpBadRequestException;
+use AlexaLeonid\Exceptions\Http\HttpForbiddenException;
+use AlexaLeonid\Exceptions\Http\HttpInternalServerErrorException;
+use AlexaLeonid\Exceptions\Http\HttpNotFoundException;
+use AlexaLeonid\Exceptions\Http\HttpServiceUnavailableException;
+use AlexaLeonid\Exceptions\Http\HttpUnauthorizedException;
 use Exception;
+
 
 class ErrorHandler
 {
