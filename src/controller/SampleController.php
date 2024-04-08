@@ -30,4 +30,12 @@ class SampleController implements ControllerInterface {
     public function index() {
         echo "HELLO WELL";
     }
+
+    public function login() {
+        echo "<form action = '/home/store?foo=login' method = 'post'><label>Login</label><input type = 'text' name = 'foo'><br/><br/>";
+    }
+
+    public function store() {
+        var_dump($_POST);
+    }
 }
