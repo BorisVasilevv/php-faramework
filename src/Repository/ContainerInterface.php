@@ -1,6 +1,6 @@
 <?php
 
-namespace BorisVasilevv\repository;
+namespace BorisVasilevv\Repository;
 
 interface ContainerInterface{
     public function has(string $key): bool;

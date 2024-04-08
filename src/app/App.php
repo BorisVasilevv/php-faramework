@@ -1,16 +1,15 @@
 <?php
 
-namespace vvelless\Csu2024;
+namespace BorisVasilevv\Csu2024;
 
-use BorisVasilevv\repository\Container;
 use ersnick\Router\Router;
-use BorisVasilevv\repository\ComponentContainer;
+use BorisVasilevv\Repository\ComponentContainer;
 
 class App
 {
     private array $params;
     private $parents;
-    public Container $container;
+    public ComponentContainer $container;
     public function init()
     {
         if(!array_key_exists("components", $this->params))

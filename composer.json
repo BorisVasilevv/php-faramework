@@ -5,10 +5,9 @@
   "autoload": {
     "psr-4": {
       "BorisVasilevv\\Csu2024\\": "src/app/",
-      "ersnick\\Router\\": "src/Router/",
-      "BorisVasilevv\\repository\\":"src/repository/",
-      "BorisVasilevv\\Exception\\": "src/exception/",
-      "BorisVasilevv\\Repository\\":"src/repository/",
+      "ersnick\\Router\\": "src/router/",
+      "BorisVasilevv\\Repository\\": "src/Repository/",
+      "BorisVasilevv\\Exceptions\\": "src/Exceptions/",
       "AlexaLeonid\\Exceptions\\Http\\":"src/Exceptions/Http",
       "AlexaLeonid\\Handlers\\":"src/Handlers/"
     }

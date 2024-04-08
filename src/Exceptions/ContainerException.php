@@ -1,6 +1,6 @@
 <?php
 
-namespace BorisVasilevv\Exception;
+namespace BorisVasilevv\Exceptions;
 
 use Psr\Container\ContainerExceptionInterface;
 

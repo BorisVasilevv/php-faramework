@@ -2,10 +2,7 @@
 
 namespace BorisVasilevv\Repository;
 
-
-
-use BorisVasilevv\Exception\ComponentNotFoundException;
-use BorisVasilevv\Exception\ContainerException;
+use BorisVasilevv\Exceptions\ContainerException;
 
 class ComponentContainer extends BaseComponent implements ComponentInterface, ContainerInterface {
     private array $components =[];
