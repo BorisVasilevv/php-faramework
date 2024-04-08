@@ -21,9 +21,9 @@ class HttpException extends Exception
 
     }
 
-    public function getView(): string
+    public function getView(): void
     {
-        return $this->view;
+        include($this->view);
     }
 
 
