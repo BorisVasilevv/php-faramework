@@ -27,8 +27,15 @@ class App
     public function run(): string
     {
 //        return 'It`s a life!';
+<<<<<<< Updated upstream
         $router = new Router((array)0);
         $router->run();
         return "";
     }
+=======
+//        $Router = new Router((array)0);
+//        $Router->run();
+//        return "";
+//    }
+>>>>>>> Stashed changes
 }
