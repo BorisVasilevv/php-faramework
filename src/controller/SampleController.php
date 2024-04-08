@@ -7,8 +7,8 @@ use vvelless\model\SampleModel;
 class SampleController implements ControllerInterface {
     private $sampleService;
 
-    public function __construct($sampleService) {
-        $this->sampleService = $sampleService;
+    public function __construct(/*$sampleService*/) {
+//        $this->sampleService = $sampleService;
     }
 
     public function handleRequest($request) {
@@ -31,6 +31,6 @@ class SampleController implements ControllerInterface {
     }
 
     public function index() {
-        echo "ddddddddd";
+        echo "HELLO WELL";
     }
 }

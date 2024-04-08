@@ -9,7 +9,8 @@
       "BorisVasilevv\\Repository\\": "src/Repository/",
       "BorisVasilevv\\Exceptions\\": "src/Exceptions/",
       "AlexaLeonid\\Exceptions\\Http\\":"src/Exceptions/Http",
-      "AlexaLeonid\\Handlers\\":"src/Handlers/"
+      "AlexaLeonid\\Handlers\\":"src/Handlers/",
+      "vvelless\\controller\\": "src/controller/"
     }
   },
   "authors": [

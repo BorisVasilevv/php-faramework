@@ -6,12 +6,12 @@ use BorisVasilevv\Exceptions\ContainerException;
 
 class ComponentContainer extends BaseComponent implements ComponentInterface, ContainerInterface {
     private array $components =[];
-    private array $config;
 
     public function init(): void
     {
 
     }
+
 
     public function get(string $id)
     {
@@ -31,9 +31,6 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
             return true;
         }
 
-        if(array_key_exists($id, $this->config)){
-            return true;
-        }
         return false;
     }
 
