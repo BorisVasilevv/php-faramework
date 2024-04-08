@@ -5,18 +5,23 @@
   "autoload": {
     "psr-4": {
       "BorisVasilevv\\Csu2024\\": "src/app/",
-      "BorisVasilevv\\repository\\":"src/repository/",
       "ersnick\\Router\\": "src/Router/",
+      "BorisVasilevv\\repository\\":"src/repository/",
+      "BorisVasilevv\\Exception\\": "src/exception/",
       "BorisVasilevv\\Repository\\":"src/repository/",
-      "AlexaLeonid\\Exceptions\\":"src/Exeptions/",
-      "AlexaLeonid\\Exceptions\\Container\\":"src/Exeptions/Container/",
+      "AlexaLeonid\\Exceptions\\Http\\": "src/exception/http/",
       "AlexaLeonid\\Handlers\\":"src/Handlers/"
     }
   },
   "authors": [
     {
-      "name": "borisvasilevv",
+      "name": "borisvasilevv"
+    },
+    {
       "name": "ersnick"
+    },
+    {
+      "name": "alexaleonid"
     }
   ],
   "minimum-stability": "dev",

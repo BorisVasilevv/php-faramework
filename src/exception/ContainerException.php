@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types = 1);
-
-namespace AlexaLeonid\Exceptions\Container;
+namespace BorisVasilevv\Exception;
 
 use Psr\Container\ContainerExceptionInterface;
 
