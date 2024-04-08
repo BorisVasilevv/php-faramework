@@ -11,7 +11,8 @@
       "AlexaLeonid\\Exceptions\\Http\\":"src/Exceptions/Http",
       "AlexaLeonid\\Handlers\\":"src/Handlers/",
       "vvelless\\controller\\": "src/controller/"
-    }
+    },
+    "files": ["src/Handlers/ErrorHandler.php"]
   },
   "authors": [
     {
