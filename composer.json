@@ -10,7 +10,8 @@
       "BorisVasilevv\\Exceptions\\": "src/Exceptions/",
       "AlexaLeonid\\Exceptions\\Http\\":"src/Exceptions/Http",
       "AlexaLeonid\\Handlers\\":"src/Handlers/"
-    }
+    },
+    "files": ["src/Handlers/ErrorHandler.php"]
   },
   "authors": [
     {
