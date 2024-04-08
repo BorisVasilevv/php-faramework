@@ -26,6 +26,8 @@ class App
     }
 
 
+
+
 //    public function run(): string
 //    {
 //        set_error_handler([new ErrorHandler(), "HttpErrorHandler"]);
