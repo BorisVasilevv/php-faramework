@@ -37,11 +37,6 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
         return false;
     }
 
-    public function __construct(array $params){
-        parent::__construct($params);
-        $this->config = $params;
-        $this->components = [];
-    }
 
     /**
      * @throws \ReflectionException

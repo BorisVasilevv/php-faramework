@@ -2,13 +2,14 @@
 
 namespace ersnick\Router;
 use AlexaLeonid\Exceptions\Http\HttpNotFoundException;
-use BorisVasilevv\Exceptions\ContainerException;
+
+use BorisVasilevv\Repository\ComponentContainer;
 
 class Router
 {
     private array $routes = [];
 
-    public function __construct(private ContainerException $container)
+    public function __construct(private readonly ComponentContainer $container)
     {
     }
 

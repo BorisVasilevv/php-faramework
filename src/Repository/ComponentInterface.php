@@ -2,6 +2,6 @@
 
 namespace BorisVasilevv\Repository;
 interface ComponentInterface{
-    public function __construct(array $params);
+    public function __construct();
     public function init():void;
 }
