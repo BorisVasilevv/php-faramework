@@ -32,7 +32,7 @@ class SampleController implements ControllerInterface {
     }
 
     public function login() {
-        echo "<form action = '/home/store?foo=login' method = 'post'><label>Login</label><input type = 'text' name = 'foo'><br/><br/>";
+        echo "<form action = '/store?foo=login' method = 'post'><label>Login</label><input type = 'text' name = 'foo'><br/><br/>";
     }
 
     public function store() {

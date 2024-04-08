@@ -16,9 +16,9 @@ $container = new ComponentContainer();
 $router    = new Router($container);
 
 $router
-    ->get('/home', [SampleController::class,'index'])
-    ->get('/home/login', [SampleController::class,'login'])
-    ->post('/home/store', [SampleController::class,'store']);
+    ->get('/', [SampleController::class,'index'])
+    ->get('/login', [SampleController::class,'login'])
+    ->post('/store', [SampleController::class,'store']);
 
 (new App(
     $router,
