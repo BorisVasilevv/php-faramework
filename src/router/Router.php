@@ -1,11 +1,7 @@
 <?php
 
-<<<<<<< Updated upstream
-namespace ersnick\Csu2024;
-=======
 namespace ersnick\Router;
 use AlexaLeonid\Exceptions\HttpNotFoundException;
->>>>>>> Stashed changes
 
 class Router
 {
