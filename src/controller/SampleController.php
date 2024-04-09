@@ -12,19 +12,16 @@ class SampleController implements ControllerInterface {
     }
 
     public function handleRequest($request) {
-        // Обработка запроса и вызов методов
-        //$data = $this->sampleModel->processData($request);
-        //$response = $this->sampleService->generateResponse($data);
-        //$this->sendResponse($response);
+        // TODO обработать запрос
     }
 
     public function generateResponse($data)
     {
-        // Ну тут надо тоже чета делать..
+        // TODO сгенерировать ответ
     }
 
     public function sendResponse($response) {
-        // Логика отправки ответа
+        // TODO реализовать отправку ответа
     }
 
     public function index() {
