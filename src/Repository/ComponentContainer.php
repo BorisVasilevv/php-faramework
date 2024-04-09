@@ -65,13 +65,13 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
 
                 if(! $type){
                     throw new ContainerException(
-                        'Failing to resolve class"' .$id.'". Parameter "'.$name. '" is missing a type hint'
+                        'Ошибка вызова класса"' .$id.'". Проблема с параметром "'.$name. '"'
                     );
                 }
 
                 if($type instanceof \ReflectionUnionType){
                     throw new ContainerException(
-                        'Failing to resolve class"' .$id.'" because of union type for param "'.$name. '"'
+                        'Ошибка вызова класс"' .$id.'" параметр "'.$name. '" является объявлением нескольких типов данных  (union type)'
                     );
                 }
 
@@ -80,7 +80,7 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
                 }
 
                 throw new ContainerException(
-            'Failing to resolve class"' .$id.'" because of invalid param "'.$name. '"'
+            'Ошибка вызова класс"' .$id.'" из-за неправильного параметра"'.$name. '"'
                 );
 
             },
