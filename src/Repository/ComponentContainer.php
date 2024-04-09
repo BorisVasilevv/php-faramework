@@ -12,7 +12,6 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
 
     }
 
-
     public function get(string $id)
     {
         if($this->has($id)){
@@ -20,9 +19,7 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
             $entry = $this->components[$id];
             return $entry($this);
         }
-
         return $this->resolve($id);
-
     }
 
     public function has(string $id): bool
@@ -30,7 +27,6 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
         if(array_key_exists($id, $this->components)){
             return true;
         }
-
         return false;
     }
 
@@ -41,29 +37,27 @@ class ComponentContainer extends BaseComponent implements ComponentInterface, Co
      */
     private function resolve(string $id)
     {
-        // inspect the class that we are trying to get from container
+        // Проверяем класс который хотим получить из контейнера
         $reflectClass = new \ReflectionClass($id);
 
         if(!$reflectClass->isInstantiable()){
             throw new ContainerException('Class "'.$id.'" is not instantiable');
         }
-        // Inspect the constructor of the class
+        // Получаем конструктор класса
         $constructor = $reflectClass->getConstructor();
 
-        // Inspect the constructor parameters
+
         if(!$constructor){
             //return $reflectClass->newInstance();
             return new $id;
         }
-
-        // Inspect the construction parameters
+        // Получаем конструктор класса
         $parameters = $constructor->getParameters();
 
         if(!$parameters){
             return new $id;
         }
-
-        // If the constructor parameter is a class then try to resolve that class using the container
+        // Если параметр конструктора это класс пытаемся вызвать класс используя контейнер
         $dependencies = array_map(
             function(\ReflectionParameter $parameter) use ($id){
                 $name = $parameter->getName();

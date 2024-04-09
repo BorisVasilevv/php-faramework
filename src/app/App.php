@@ -16,7 +16,9 @@ class App
 {
 
 
-    public function __construct(protected Router $router, protected array $request)
+    public function __construct(
+        protected Router $router,
+        protected array $request)
     {
 
     }
