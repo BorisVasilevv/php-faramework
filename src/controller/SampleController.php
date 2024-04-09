@@ -31,8 +31,8 @@ class SampleController implements ControllerInterface {
         echo "HELLO WELL";
     }
 
-    public function login() {
-        echo "<form action = '/store?foo=login' method = 'post'><label>Login</label><input type = 'text' name = 'foo'><br/><br/>";
+    public function registration() {
+        include ("registration.html");
     }
 
     public function store() {
