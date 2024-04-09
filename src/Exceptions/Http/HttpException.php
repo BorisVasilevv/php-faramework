@@ -20,6 +20,11 @@ class HttpException extends Exception
         $this->view = $view;
         return $this;
     }
+
+    public function getErrorMessage(): string
+    {
+        return 'Http ошибка: ' . $this->getMessage();
+    }
 }
 
 
