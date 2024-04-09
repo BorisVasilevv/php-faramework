@@ -8,5 +8,5 @@ class HttpServiceUnavailableException extends HttpException
 
     protected $message = "503 Service Unavailable:  the server is not ready to handle the request.";
 
-    protected string $view = "Exceptions/503ServiceUnavailable.html";
+    protected string $view = "Html/503ServiceUnavailable.html";
 }

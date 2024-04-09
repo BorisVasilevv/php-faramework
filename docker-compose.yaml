@@ -21,3 +21,16 @@ services:
     volumes:
       - .:/var/www
     restart: on-failure
+
+  mysql:
+    image: mysql:5.7
+    build:
+      context: ./docker/mySql
+    restart: always     #каждый раз будет по-новому создаватса
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
