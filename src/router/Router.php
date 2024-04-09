@@ -30,6 +30,16 @@ class Router
         return $this->register('post', $route, $action);
     }
 
+    public function delete(string $route, callable|array $action): self
+    {
+        return $this->register('delete', $route, $action);
+    }
+
+    public function put(string $route, callable|array $action): self
+    {
+        return $this->register('put', $route, $action);
+    }
+
     public function routes(): array
     {
         return $this->routes;
@@ -47,9 +57,7 @@ class Router
         if (is_callable($action)) {
             return call_user_func($action);
         }
-
         [$class, $method] = $action;
-
         if (class_exists($class, true)) {
             $class = $this->container->get($class);
 
