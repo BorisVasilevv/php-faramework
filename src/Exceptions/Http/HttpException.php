@@ -8,27 +8,18 @@ use Exception;
 
 class HttpException extends Exception
 {
-
     protected string $view = "";
 
-    public function getCod()
+    public function getView(): void
     {
-        return $this->code;
-    }
-    public function getErrorMessage(): string
-    {
-        return $this->message;
-
+        include($this->view);
     }
 
-    public function getView(): string
+    public function setView(string $view): self
     {
-        return $this->view;
+        $this->view = $view;
+        return $this;
     }
-
-
-
-
 }
 
 

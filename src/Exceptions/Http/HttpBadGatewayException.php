@@ -9,5 +9,5 @@ class HttpBadGatewayException extends HttpException
 
     protected $message = "502 Bad Gateway: the server, while acting as a gateway or proxy, received an invalid response from the upstream server.";
 
-    protected string $view = "Exceptions/502BadGateway.html";
+    protected string $view = "Html/502BadGateway.html";
 }

@@ -11,6 +11,15 @@ use AlexaLeonid\Exceptions\Http\HttpServiceUnavailableException;
 use AlexaLeonid\Exceptions\Http\HttpUnauthorizedException;
 use Exception;
 
+/**
+ * @throws HttpUnauthorizedException
+ * @throws HttpServiceUnavailableException
+ * @throws HttpBadGatewayException
+ * @throws HttpForbiddenException
+ * @throws HttpNotFoundException
+ * @throws HttpBadRequestException
+ * @throws HttpInternalServerErrorException
+ */
 function HttpErrorHandler($errno, $errstr, $errfile, $errline)
 {
     throw match ($errno) {
@@ -23,8 +32,6 @@ function HttpErrorHandler($errno, $errstr, $errfile, $errline)
         401 => new HttpUnauthorizedException($errstr),
         default => new Exception($errstr),
     };
-
-    //  return true;
 }
 
 set_error_handler("AlexaLeonid\\Handlers\\HttpErrorHandler");
